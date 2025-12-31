@@ -4,6 +4,25 @@ A beautiful, fully interactive 3D chess game built with Three.js, featuring real
 
 ![3D Chess Game](https://img.shields.io/badge/Three.js-r128-blue) ![Chess.js](https://img.shields.io/badge/Chess.js-0.10.3-green) ![Status](https://img.shields.io/badge/Status-Playable-success)
 
+## About the Models
+
+This project uses high-quality 3D chess piece models originally created by MakerBot:
+- **Source**: [Chess Set on Printables](https://www.printables.com/model/32741-chess-set/files)
+- **Original Format**: STL files (designed for 3D printing)
+- **Conversion**: Converted from STL to GLB format using Blender for web optimization
+- **License**: Please refer to the original model page for licensing information
+
+The models provide excellent detail and are optimized for both 3D printing and real-time web rendering.
+
+
+#### Model Conversion Steps
+If you want to use your own models or reconvert the originals:
+1. Download STL files from the Printables link above
+2. Open each STL file in Blender
+3. Export as GLB (File > Export > glTF 2.0)
+4. Save with corresponding names: `pawn.glb`, `rook.glb`, `knight.glb`, `bishop.glb`, `queen.glb`, `king.glb`
+5. Place all GLB files in the `assets/` folder
+
 ## Features
 
 ### 🎮 Gameplay
@@ -205,8 +224,6 @@ Potential features for future versions:
 - [Chess.js](https://github.com/jhlywa/chess.js) - Chess logic
 - [DAT.GUI](https://github.com/dataarts/dat.gui) - Debug interface
 
-### Models
-3D chess piece models should be obtained from appropriate sources with proper licensing.
 
 ## License
 
