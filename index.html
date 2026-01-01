@@ -29,10 +29,10 @@
             z-index: 20;
         }
         
-        .controls { margin-top: 15px; pointer-events: auto; }
+        .controls { margin-top: 5px; pointer-events: auto; }
         
         button {
-            padding: 10px 20px; font-size: 16px; cursor: pointer; background: #5d4037; 
+            padding: 2px 4px; font-size: 12px; cursor: pointer; background: #5d4037; 
             color: #ffe0b2; border: 1px solid #8d6e63; border-radius: 4px;
             font-family: 'Georgia', serif; transition: background 0.2s;
         }
@@ -55,7 +55,7 @@
     <div id="loading">Loading 3D Models...</div>
 
     <div id="ui-container">
-        <div id="status">White's Turn</div>
+        <!--<div id="status">White's Turn</div>-->
         <div class="controls">
             <button onclick="resetGame()">Reset Game</button>
         </div>
@@ -475,7 +475,7 @@
             updateBoardState();
             clearHighlights();
             selectedSquare = null;
-            updateStatus();
+            //updateStatus();
             if (!game.game_over()) {
                 isAiThinking = true;
                 document.getElementById('status').innerText = "Computer Thinking...";
@@ -494,7 +494,7 @@
             }
             game.move(chosenMove);
             updateBoardState();
-            updateStatus();
+            //updateStatus();
             isAiThinking = false;
         }
 
@@ -513,7 +513,7 @@
             clearHighlights();
             selectedSquare = null;
             isAiThinking = false;
-            updateStatus();
+            //updateStatus();
         }
 
         function onWindowResize() {
