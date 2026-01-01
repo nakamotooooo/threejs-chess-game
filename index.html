@@ -478,7 +478,7 @@
             //updateStatus();
             if (!game.game_over()) {
                 isAiThinking = true;
-                document.getElementById('status').innerText = "Computer Thinking...";
+                //document.getElementById('status').innerText = "Computer Thinking...";
                 setTimeout(makeAiMove, 500); 
             }
         }
@@ -504,7 +504,7 @@
             else if (game.in_draw()) statusText = "Draw!";
             else if (game.in_check()) statusText = "Check!";
             else statusText = (game.turn() === 'w' ? "White's Turn" : "Black's Turn");
-            document.getElementById('status').innerText = statusText;
+            //document.getElementById('status').innerText = statusText;
         }
         
         function resetGame() {
